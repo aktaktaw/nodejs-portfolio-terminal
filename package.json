@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-portfolio-terminal",
+  "version": "1.0.0",
+  "description": "portfolio terminal style",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aktaktaw/nodejs-portfolio-terminal.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "amir3hamzah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aktaktaw/nodejs-portfolio-terminal/issues"
+  },
+  "homepage": "https://github.com/aktaktaw/nodejs-portfolio-terminal#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
