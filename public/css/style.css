@@ -4,6 +4,19 @@
     font-family: 'Fira Mono', monospace;
 }
 
+header{
+    width: 100%;
+    margin: 1em 1em;
+}
+
+img.center{
+    margin: 0 auto;
+    padding: 0px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
 .navPad{
-    padding-top: 5%;
+    padding-top: 0.2em;
 }
