@@ -121,7 +121,7 @@ app.get('/portfolio', function(req, res) {
 
 // about page 
 app.get('/about', function(req, res) {
-  res.render('pages/about',{works: workingList});
+  res.render('pages/about', { works: workingList });
 });
 
 app.listen(process.env.PORT || 5000)
