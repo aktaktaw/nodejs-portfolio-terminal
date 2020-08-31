@@ -9,16 +9,18 @@ header{
     margin: 1em 1em;
 }
 
-img.center{
-    margin: 0 auto;
-    padding: 0px;
-    width: 120px;
-    height: 120px;
-    text-align: center;
+h1{
+    min-height: 5vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .navPad{
     padding-top: 0.2em;
+}
+
+.padding{
+    padding: 1em;
 }
 
 .tracking-detail {

@@ -54,32 +54,248 @@ const workingList=[
 
 const portfolioList = [
   { 
-    logo: '/img/merdekaDance.png',
+    img: '/img/portfolio/ar-vr/merdekaDance.png',
     name: 'Merdeka Dance',
-    desciption: 'Selebrating Malaysia Independence Day in Snapchat with Full Body Tracker',
+    description: 'Celebrating Malaysia Independence Day in Snapchat with Full Body Tracker',
     tech: 'Snapchat/Lens Studio',
     category: 'Augmented Reality'
   },
   { 
-    logo: 'https://cdn.shopify.com/shopifycloud/hatchful-web/assets/01273596e4e92b9de8e8a11cd4ed455e.png',
-    company: 'AR Portal Masjid Besi',
-    desciption: 'Create virtual tour ',
-    tech: 'Snapchat',
+    img: '/img/portfolio/ar-vr/dancing.jpg',
+    name: 'Dancing at Home',
+    description: 'Things to do during pandemic quarantine',
+    tech: 'Snapchat/Lens Studio',
     category: 'Augmented Reality'
   },
   { 
-    logo: 'https://cdn.shopify.com/shopifycloud/hatchful-web/assets/67cbe9b74baf7f893488c5fc426d31eb.png',
-    company: 'GameHub Sdn Bhd',
-    desciption: 'Game for lonely people',
-    tech: 'Game',
-    category: 'entertainment'
-  }
+    img: '/img/portfolio/ar-vr/earth-plane.jpg',
+    name: 'Space World AR',
+    description: 'Create cute earth using plane detection',
+    tech: 'Spark AR/ Instagram filter',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/ar-vr/eevee.jpg',
+    name: 'Pokemon AR',
+    description: 'Display AR pokemon in pokemon wallpaper',
+    tech: 'Vuforia/ Unity',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/ar-vr/eye.jpg',
+    name: 'Eye Art',
+    description: 'Create a AR Art showcase using plane tracker',
+    tech: 'Spark AR/ Instagram filter',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/ar-vr/gundam-ar.jpg',
+    name: 'Justice Knight AR',
+    description: 'Create a gundam showcase to another level',
+    tech: 'Spark AR/ Instagram filter',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/ar-vr/game-position-filter.jpg',
+    name: 'What is in GameDev',
+    description: 'Interactive quiz instagram filter for random position in game development',
+    tech: 'Spark AR/ Instagram filter',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/ar-vr/blink-game.jpg',
+    name: 'Simple Blink AR Game',
+    description: 'Simple AR Game',
+    tech: 'Spark AR/ Instagram filter',
+    category: 'Augmented Reality'
+  },
+  { 
+    img: '/img/portfolio/iot/gesture-relay.png',
+    name: 'Gesture Control ',
+    description: 'Control your relay switch using gesture sensor',
+    tech: 'Arduino',
+    category: 'IOT'
+  },
+  { 
+    img: '/img/portfolio/iot/unity-arduino.jpg',
+    name: 'Uniy and Arduino',
+    description: 'Send command from Unity Game to Micro-controller board',
+    tech: 'Arduino/ Unity',
+    category: 'IOT'
+  },
+  { 
+    img: '/img/portfolio/iot/robot.jpg',
+    name: 'Simple Robot using Raspberry PI',
+    description: 'Control a simple robot using SSH',
+    tech: 'Raspberry PI/ Python',
+    category: 'IOT'
+  },
+  { 
+    img: '/img/portfolio/iot/wemos-color.jpg',
+    name: 'Wemos Color Detection',
+    description: 'A micro-controller board detecting real world color',
+    tech: 'Arduino/ Node-RED',
+    category: 'IOT'
+  },
+  { 
+    img: '/img/portfolio/iot/node-red.png',
+    name: 'Simple Premise Counter',
+    description: 'Managing customer allowed to enter the premises or shopping complex',
+    tech: 'Raspberry PI/ Node-RED',
+    category: 'IOT'
+  },
+  { 
+    img: '/img/portfolio/photography/adele.jpg',
+    name: 'Adele Gundam',
+    description: 'Action figure photo',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/fv-malaysia-1.jpg',
+    name: 'FV Malaysia',
+    description: 'FV Malaysia 2015 Event at Sepang International Circuit',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/fv-malaysia-2.jpg',
+    name: 'FV Malaysia',
+    description: 'FV Malaysia 2015 Event at Sepang International Circuit',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/fv-malaysia-3.jpg',
+    name: 'FV Malaysia',
+    description: 'FV Malaysia 2015 Event at Sepang International Circuit',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/street-3.jpg',
+    name: 'Street Photography',
+    description: 'Street Photography at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/street-2.jpg',
+    name: 'Street Photography',
+    description: 'Street Photography at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/street-1.jpg',
+    name: 'Street Photography',
+    description: 'Street Photography at Kuala Lumpur',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/landscape-1.jpg',
+    name: 'Sunset Melaka',
+    description: 'Street Photography at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/landscape-2.jpg',
+    name: 'Pantai Puteri',
+    description: 'Street Photography at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/street-4.jpg',
+    name: 'Landscape',
+    description: 'Street Photography at Putrajaya',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/jeanne-alter.jpg',
+    name: 'Jeanne Alter',
+    description: 'Action Figure Photoshoot',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/gilgamesh.jpg',
+    name: 'Gilamesh',
+    description: 'Action Figure Photoshoot',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/wedding-1.jpg',
+    name: 'My Friend Wedding',
+    description: 'My friend wedding at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/wedding-2.jpg',
+    name: 'My Friend Wedding',
+    description: 'My friend wedding at Melaka',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/photography/event-utem.jpg',
+    name: 'Light Photography',
+    description: 'Events in UTeM',
+    tech: 'Photgraphy/ Adobe Photoshop',
+    category: 'Photography'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/fv-tshirt.jpg',
+    name: 'T-Shirt White',
+    description: 'T-Shirt for event FV Malaysia 2015  ',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/fv-tshirt2.jpg',
+    name: 'T-Shirt Black',
+    description: 'T-Shirt for event FV Malaysia 2015  ',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/member-card.png',
+    name: 'Member Card Design',
+    description: 'Design for club Pembimbing Rakan Siswa  ',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/poster-1.jpg',
+    name: 'Photo Montaj FV Malaysia',
+    description: 'A3 size print for post-event FV Malaysia 2015',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/poster-3.jpg',
+    name: 'Poster',
+    description: 'Poster event from Pembimbing Rakan Siswa',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
+  { 
+    img: '/img/portfolio/graphic-design/ajk-tag.jpg',
+    name: 'Event Tag Design',
+    description: 'Design tag for FV Malaysia 2015',
+    tech: 'Adobe Photoshop',
+    category: 'Graphic Design'
+  },
 ]
 
 app.get('/', (req, res)=>{
   res.render('pages/index')
 })
-
 
 // skill page 
 app.get('/portfolio',(req, res) =>{
