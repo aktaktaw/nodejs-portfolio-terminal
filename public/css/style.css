@@ -160,6 +160,7 @@ img.center{
     border:1px solid #e5e5e5;
     font-size:.6rem
 }
+
 @media(min-width:992px) {
     .tracking-item {
      margin-left:10rem

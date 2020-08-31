@@ -8,19 +8,9 @@ app.use(express.static('public'))
 
 app.set('view engine','ejs')
 
-// index page 
-app.get('/', function(req, res) {
-    res.render('pages/index');
-});
-
-// about page 
-app.get('/about', function(req, res) {
-    res.render('pages/about');
-});
-
 const workingList=[
   {
-    logo:'img/working/freelance',
+    logo:'/img/logo.png',
     name: 'Freelance',
     location: 'Cyberjaya',
     position: 'R&D Developer',
@@ -28,7 +18,7 @@ const workingList=[
     date: 'Dec 2017 - Present'
   },
   {
-    logo:'img/working/interobang',
+    logo:'/img/working/itrb-logo.png',
     name: 'Interrobang Sdn Bhd',
     location: 'Damansara',
     position: 'Unity Developer',
@@ -36,7 +26,7 @@ const workingList=[
     date: 'Sept 2017 - Dec 2017'
   },
   {
-    logo:'img/working/bestinet',
+    logo:'/img/working/bestinet-logo.png',
     name: 'Bestinet Payment Sdn Bhd',
     location: 'Cyberjaya',
     position: 'Jr. PHP Developer',
@@ -44,7 +34,7 @@ const workingList=[
     date: 'May 2017 - Sept 2017'
   },
   {
-    logo:'img/working/HPE',
+    logo:'/img/working/hpe-logo.png',
     name: 'Hewlett Packard Enterprise',
     location: 'Cyberjaya',
     position: 'Intern',
@@ -52,7 +42,7 @@ const workingList=[
     date: 'Sept 2016 - Feb 2017'
   },
   {
-    logo:'img/working/photographer',
+    logo:'/img/logo.png',
     name: 'Freelance',
     location: 'Melaka',
     position: 'Photographer',
@@ -61,34 +51,6 @@ const workingList=[
   },
 ]
 
-const volunteerList = [
-  {
-    name:'Photographer, Microsoft Student Partner',
-    club: 'Imagine Cup',
-    years: '2016'
-  },
-  {
-    name:'Bureau of Online Photography Competition',
-    club: 'Minggu Alam Sekitar Melaka',
-    years: '2015'
-  },
-  {
-    name:'Head of Bureau Promotion and Mass Media',
-    club: 'FV Malaysia',
-    years: '2015'
-  },
-  {
-    name:'Exco Multimedia, Penerbitan & Publisiti',
-    club: 'Pembimbing Rakan Siswa',
-    years: '2012 - 2013'
-  },
-  {
-    name:'Exco Motivasi, Latihan, Modul',
-    club: 'Pembimbing Rakan Siswa',
-    years: '2011 - 2012'
-  },
-
-]
 
 const portfolioList = [
   { 
@@ -114,13 +76,18 @@ const portfolioList = [
   }
 ]
 
+app.get('/', (req, res)=>{
+  res.render('pages/index')
+})
+
+
 // skill page 
-app.get('/portfolio', function(req, res) {
+app.get('/portfolio',(req, res) =>{
   res.render('pages/portfolio',{portfolios: portfolioList});
 });
 
 // about page 
-app.get('/about', function(req, res) {
+app.get('/about', (req, res) => {
   res.render('pages/about', { works: workingList });
 });
 
